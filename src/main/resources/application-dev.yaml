@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: home-drive
+  datasource:
+   # type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      idle-timeout: 60000
+      minimum-idle: 1
+      maximum-pool-size: 10
+      connection-test-query: select 1
+      pool-name: ds1
+      connection-timeout: 120000
+    url: jdbc:mysql://localhost:3306/home?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&generateSimpleParameterMetadata=true&autoReconnect=true
+    username: root
+    password:
+
+
+
+
